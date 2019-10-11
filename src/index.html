@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="MobileOptimized" content="320">
+  <title>HostGator | Desafio Front-End</title>
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--endbuild-->
+  <link rel="shortcut icon" href="./img/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="img/hostgator-logo.svg" 
+        alt="Logomarca HostGator" 
+        title="Logomarca HostGator"/>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="slider">
+      <div class="container">
+        <div class="info-banner">
+          <div class="title">Hospedagem de Sites</div>
+          <h1>Tenha uma hospedagem de sites estável e evite perder visitantes diariamente</h1>
+          <ul>
+            <li>99,9% de disponibilidade: seu site sempre no ar</li>
+            <li>Suporte 24h, todos os dias</li>
+            <li>Painel de Controle cPanel</li>
+          </ul>
+        </div>
+        <div class="office-bg">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+      <a href="#" class="arrow-slider bounce">
+        <img src="img/arrow.svg" 
+          alt="Role a tela para baixo e vejo nossos planos" 
+          title="Role a tela para baixo e vejo nossos planos" />
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="want-to-pay">
+        <div class="title">Quero pagar a cada:</div>
+      </div>
+      <div class="pay-times">
+        <div class="text-center">
+          <div class="inputGroup">
+            <input id="3-year" name="pay-times-radio" type="radio" onclick="handleClick(this.value);" value="3_year" checked/>
+            <label for="3-year">3 anos</label>
+          </div>
+          <div class="inputGroup">
+            <input id="1-year" name="pay-times-radio" type="radio" onclick="handleClick(this.value);" value="1_year" />
+            <label for="1-year">1 anos</label>
+          </div>
+          <div class="inputGroup">
+            <input id="1-month" name="pay-times-radio" type="radio" onclick="handleClick(this.value);" value="1_month" />
+            <label for="1-month">1 mês</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row carousel">
+        
+        <div class="siema">
+          <div class="column">
+              <header>
+                <img src="img/hospp.svg" 
+                  alt="Plano de hospedagem P" 
+                  title="Plano de hospedagem P" />
+                <div class="title"> Plano P </div>
+              </header>
+              <div class="content planoP">
+                <div class="total">
+                  <span class="full-value"></span>
+                  <span class="discount-value"></span>
+                </div>
+                <div class="equivalent">equivalente a</div>
+                <div class="month">
+                  <span class="rs">R$</span>
+                  <span class="value"></span>
+                  <span class="by">/mês</span>
+                </div>
+                <div class="hire-now">
+                  <a href="#" target="_blank">Contrate Agora</a>
+                </div>
+                <div class="domain-free">
+                  1 ano de Domínio grátis 
+                  <img src="img/info.svg" 
+                    alt="1 ano de Domínio grátis " 
+                    title="1 ano de Domínio grátis " />
+                </div>
+                <div class="economize">
+                  economize <span class="value"></span> <span class="button-off">40% OFF</span>
+                </div>
+              </div>
+              <footer>
+                <div class="description"><span class="border">Para 1 site</span></div>
+                <div class="description"><b>100 GB</b> de Armazenamento</div>
+                <div class="description"><span class="border">Contas de E-mail <b>Ilimitadas</b></span></div>
+                <div class="description">Criador de Sites <b>Grátis</b></div>
+                <div class="description">Certificado SSL <b>Grátis</b> (https)</div>
+              </footer>
+          </div>
+          <div class="column active">
+              <header>
+                <img src="img/hospm.svg" 
+                  alt="Plano de hospedagem M" 
+                  title="Plano de hospedagem M" />
+                  <div class="title"> Plano M </div>
+              </header>
+              <div class="content planoM">
+                <div class="total">
+                  <span class="full-value"></span>
+                  <span class="discount-value"></span>
+                </div>
+                <div class="equivalent">equivalente a</div>
+                <div class="month">
+                  <span class="rs">R$</span>
+                  <span class="value"></span>
+                  <span class="by">/mês</span>
+                </div>
+                <div class="hire-now">
+                  <a href="#" target="_blank">Contrate Agora</a>
+                </div>
+                <div class="domain-free">
+                  1 ano de Domínio grátis 
+                  <img src="img/info.svg" 
+                    alt="1 ano de Domínio grátis " 
+                    title="1 ano de Domínio grátis " />
+                </div>
+                <div class="economize">
+                  economize <span class="value"></span> <span class="button-off">40% OFF</span>
+                </div>
+              </div>
+              <footer>
+                <div class="description"><span class="border">Sites Ilimitados</span></div>
+                <div class="description"><b>100 GB</b> de Armazenamento</div>
+                <div class="description"><span class="border">Contas de E-mail <b>Ilimitadas</b></span></div>
+                <div class="description">Criador de Sites <b>Grátis</b></div>
+                <div class="description">Certificado SSL <b>Grátis</b> (https)</div>
+              </footer>
+          </div>
+          <div class="column">
+              <header>
+                <img src="img/hospturbo.svg" 
+                  alt="Plano de hospedagem Turbo" 
+                  title="Plano de hospedagem Turbo" />
+                  <div class="title"> Plano Turbo </div>
+              </header>
+              <div class="content planoTurbo">
+                <div class="total">
+                  <span class="full-value"></span>
+                  <span class="discount-value"></span>
+                </div>
+                <div class="equivalent">equivalente a</div>
+                <div class="month">
+                  <span class="rs">R$</span>
+                  <span class="value"></span>
+                  <span class="by">/mês</span>
+                </div>
+                <div class="hire-now">
+                  <a href="#" target="_blank">Contrate Agora</a>
+                </div>
+                <div class="domain-free">
+                  1 ano de Domínio grátis 
+                  <img src="img/info.svg" 
+                    alt="1 ano de Domínio grátis " 
+                    title="1 ano de Domínio grátis " />
+                </div>
+                <div class="economize">
+                  economize <span class="value"></span> <span class="button-off">40% OFF</span>
+                </div>
+              </div>
+              <footer>
+                <div class="description"><span class="border">Sites Ilimitados</span></div>
+                <div class="description"><b>150 GB</b> de Armazenamento</div>
+                <div class="description"><span class="border">Contas de E-mail <b>Ilimitadas</b></span></div>
+                <div class="description">Criador de Sites <b>Grátis</b></div>
+                <div class="description">Certificado SSL <b>Grátis</b> (https)</div>
+              </footer>
+          </div>
+        </div>
+        <a href="javascript:void(0);" class="prev">
+          <img src="img/arrow-carousel-left.svg" 
+            alt="Plano de hospedagem Turbo" 
+            title="Plano de hospedagem Turbo" />
+        </a>
+        <a href="javascript:void(0);" class="next">
+          <img src="img/arrow-carousel-right.svg" 
+            alt="Plano de hospedagem Turbo" 
+            title="Plano de hospedagem Turbo" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section>
+    <div class="container">
+      <div class="condition">
+        <a href="https://www.hostgator.com.br/" target="_blank">*Confira as condições da promoção</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://pawelgrzybek.com/siema/assets/siema.min.js"></script>
+  <!--build:js js/main.min.js -->
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
+  
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+.container {
+  max-width: 1170px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  padding: 0 20px;
+
+  &.carousel {
+    margin-top: 60px;
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+.column {
+  float: left;
+  width: 32%;
+  text-align: center;
+  margin-right: 1%;
+}
+
+.carousel .column {
+  background: $color-white 0% 0% no-repeat padding-box;
+  border: 1px solid $solitude;
+  border-radius: 4px;
+}
+.carousel .siema .column {
+  width: 95%;
+}
+
+.slider .column {
+  width: 30%;
+  padding-top: 4%;
+  margin-right: 0%;
+}
+
+.column.middle {
+  width: 40%;
+}

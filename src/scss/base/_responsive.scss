@@ -1,0 +1,66 @@
+@media screen and (max-width: 992px) {
+
+  .slider .office-bg {
+    display: none;
+  }
+
+  .carousel {
+
+    .prev{
+      display: inline;
+      left: 22px;
+    }
+  
+    .next{
+      display: inline;
+      right: 33px;
+    }
+  
+  }
+
+  .condition a{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .slider ul li{
+    display: inherit;
+  }
+
+  .slider .info-banner{
+    padding: 0 20px;
+
+    h1{
+      font: Bold 20px/25px "Montserrat", sans-serif;
+      padding: 0 20px;
+    }
+  }
+  .pay-times .inputGroup input:checked ~ label:before {
+    opacity: 1;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 480px) {
+  .pay-times{
+    height: 125px;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+
+    .inputGroup {
+      display: block;
+    }
+
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+}

@@ -1,0 +1,13 @@
+body{
+  font-family: $font-family;
+  background-color: $bg-site;
+  -webkit-font-smoothing: antialiased !important;
+  overflow-x: hidden;
+}
+
+h1 {
+  font: $font-h1;
+  letter-spacing: $font-letter-spacing-default;
+  color: $color-white;
+  letter-spacing: $font-letter-spacing-default;
+}
